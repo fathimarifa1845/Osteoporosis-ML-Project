@@ -49,10 +49,10 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 def load_or_train_pipeline():
     # 1. Candidate paths to load pre-saved model
     model_candidates = [
-        os.path.join(BASE_DIR, "Notebook&Saved Models", "osteoporosis_model.pkl"),
+        os.path.join(BASE_DIR, "Notebook & Saved Model", "osteoporosis_model.pkl"),
         os.path.join(BASE_DIR, "osteoporosis_model.pkl"),
         "osteoporosis_model.pkl",
-        os.path.join("Notebook&Saved Models", "osteoporosis_model.pkl")
+        os.path.join("Notebook & Saved Model", "osteoporosis_model.pkl")
     ]
     
     for path in model_candidates:
@@ -72,7 +72,7 @@ def load_or_train_pipeline():
     
     csv_file = next((p for p in csv_candidates if os.path.exists(p)), None)
     if not csv_file:
-        st.error("Error: Could not locate 'osteoporosis.csv' in 'data/' or root directory.")
+        st.error("Error: Could not locate 'osteoporosis.csv' in 'Dataset/' or root directory.")
         st.stop()
 
     df = pd.read_csv(csv_file)
