@@ -1,4 +1,5 @@
 🦴 Osteoporosis Risk Prediction System
+
 An end-to-end Machine Learning web application designed to predict osteoporosis risk using demographic, lifestyle, nutritional, and medical-history features.
 
 The project covers the complete Machine Learning workflow — from data preprocessing and exploratory data analysis to model training, hyperparameter tuning, evaluation, model serialization, and Streamlit deployment.
